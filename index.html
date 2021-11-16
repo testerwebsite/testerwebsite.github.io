@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="dist/js/function.js"></script>
+    <!-- ... -->
+</head>
+
+<body>
+
+    <!-- Navbar goes here -->
+    <nav class="bg-red-900 shadow-lg z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-center items-center">
+                <div class="flex space-x-7 items-center justify-center">
+
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center justify-center space-x-7 text-xl text-white">
+                        <a href=""
+                            class="py-4 px-2 border-b-4 hover:border-yellow-400 font-semibold rounded-sm ">Beranda</a>
+                        <a href=""
+                            class="py-4 px-2  border-b-4 hover:border-yellow-400 font-semibold rounded-sm">Pemira</a>
+                        <a href="" class="py-4 px-2  border-b-4 hover:border-yellow-400 font-semibold rounded-sm">Visi
+                            & Misi</a>
+                        <a href=""
+                            class="py-4 px-2  border-b-4 hover:border-yellow-400 font-semibold rounded-sm">Timeline</a>
+                        <a href=""
+                            class="py-4 px-2  border-b-4 hover:border-yellow-400 font-semibold rounded-sm">Kontak</a>
+                    </div>
+                </div>
+
+                <!-- Website Logo -->
+                <div>
+                    <a href="#" class="flex items-center py-4 px-2 absolute lg:right-80 lg:top-2 sm:-right-2 sm:top-2">
+                        <img src="dist/assets/img/logo.webp" alt="Logo" class="h-14 mr-2">
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html"
+                        class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Beranda</a></li>
+                <li><a href="#services"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Pemira</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Visi &
+                        Misi</a></li>
+                <li><a href="#contact"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Timeline</a>
+                </li>
+                <li><a href="#contact"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Kontak</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+
+    <!-- Content -->
+    <section class="pattern relative">
+        <div class=" flex flex-col mx-auto sm:py-12 lg:py-24 lg:flex-row justify-between relative">
+            <img src="dist/assets/img/hpt.png" alt="" class="object-cover lg:max-w-screen-md sm:max-w-screen-sm ">
+            <div
+                class="flex flex-col justify-center lg:mr-96 text-center rounded-sm lg:max-w-xl xl:max-w-2xl lg:text-left flex-1 lg:mb-24 text-white">
+                <h1 class="lg:text-6xl font-bold leading-none sm:text-6xl mb-4">Selamat Datang di <div class="block">
+                        E-Voting</div>
+                </h1>
+                <!-- <h2 class="lg:text-4xl font-bold leading-none sm:text-6xl mb-2"></h2> -->
+                <h2 class="lg:text-4xl font-bold leading-none sm:text-6xl ">Mahasiswa Raya Polimedia
+                    2021</h2>
+
+                <p class="mt-6 mb-8 text-lg sm:mb-12">Pemilihan dengan bersih dan adil, karena kami yakin majunya
+                    Polimedia Jakarta berawal dari kebersihan hati
+                    <br class="hidden md:inline lg:hidden"> untuk senantiasa adil pada segenap Civitas Akademik
+                    Politeknik Negeri Media Kreatif Jakarta
+                </p>
+                <div
+                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start text-white">
+                    <a href="#"
+                        class="px-12 py-3 font-semibold rounded-full bg-yellow-400 hover:bg-yellow-300 duration-200 text-xl">
+                        Login </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEMIRA -->
+    <section class="bg-yellow-400 pb-64">
+        <div class="mx-96 flex flex-col items-center text-center  ">
+            <div class="mb-24"> <svg width="426" height="159" viewBox="0 0 426 159" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H426V92.5L213 159L0 92.5L0 0Z" fill="#810D24" />
+                    <path
+                        d="M93.875 41.5469H85.0078V66H80.1055V41.5469H71.3164V37.5625H93.875V41.5469ZM104.715 66.3906C101.707 66.3906 99.2656 65.4466 97.3906 63.5586C95.5286 61.6576 94.5977 59.1315 94.5977 55.9805V55.3945C94.5977 53.2852 95.0013 51.4036 95.8086 49.75C96.6289 48.0833 97.7747 46.7878 99.2461 45.8633C100.717 44.9388 102.358 44.4766 104.168 44.4766C107.046 44.4766 109.266 45.3945 110.828 47.2305C112.404 49.0664 113.191 51.6641 113.191 55.0234V56.9375H99.3828C99.526 58.6823 100.105 60.0625 101.121 61.0781C102.15 62.0938 103.439 62.6016 104.988 62.6016C107.163 62.6016 108.934 61.7227 110.301 59.9648L112.859 62.4062C112.013 63.6693 110.88 64.6523 109.461 65.3555C108.055 66.0456 106.473 66.3906 104.715 66.3906ZM104.148 48.2852C102.846 48.2852 101.792 48.7409 100.984 49.6523C100.19 50.5638 99.6823 51.8333 99.4609 53.4609H108.504V53.1094C108.4 51.5208 107.977 50.3229 107.234 49.5156C106.492 48.6953 105.464 48.2852 104.148 48.2852ZM121.297 44.8672L121.434 47.3086C122.996 45.4206 125.047 44.4766 127.586 44.4766C131.987 44.4766 134.227 46.9961 134.305 52.0352V66H129.559V52.3086C129.559 50.9674 129.266 49.9779 128.68 49.3398C128.107 48.6888 127.163 48.3633 125.848 48.3633C123.934 48.3633 122.508 49.2292 121.57 50.9609V66H116.824V44.8672H121.297ZM145.105 39.7305V44.8672H148.836V48.3828H145.105V60.1797C145.105 60.987 145.262 61.5729 145.574 61.9375C145.9 62.2891 146.473 62.4648 147.293 62.4648C147.84 62.4648 148.393 62.3997 148.953 62.2695V65.9414C147.872 66.2409 146.831 66.3906 145.828 66.3906C142.182 66.3906 140.359 64.3789 140.359 60.3555V48.3828H136.883V44.8672H140.359V39.7305H145.105ZM165.105 66C164.897 65.5964 164.715 64.9388 164.559 64.0273C163.048 65.6029 161.199 66.3906 159.012 66.3906C156.889 66.3906 155.158 65.7852 153.816 64.5742C152.475 63.3633 151.805 61.8659 151.805 60.082C151.805 57.8294 152.638 56.1042 154.305 54.9062C155.984 53.6953 158.38 53.0898 161.492 53.0898H164.402V51.7031C164.402 50.6094 164.096 49.737 163.484 49.0859C162.872 48.4219 161.941 48.0898 160.691 48.0898C159.611 48.0898 158.725 48.3633 158.035 48.9102C157.345 49.444 157 50.1276 157 50.9609H152.254C152.254 49.8021 152.638 48.7214 153.406 47.7188C154.174 46.7031 155.216 45.9089 156.531 45.3359C157.859 44.763 159.337 44.4766 160.965 44.4766C163.439 44.4766 165.411 45.1016 166.883 46.3516C168.354 47.5885 169.109 49.3333 169.148 51.5859V61.1172C169.148 63.0182 169.415 64.5352 169.949 65.668V66H165.105ZM159.891 62.582C160.828 62.582 161.707 62.3542 162.527 61.8984C163.361 61.4427 163.986 60.8307 164.402 60.0625V56.0781H161.844C160.086 56.0781 158.764 56.3841 157.879 56.9961C156.993 57.6081 156.551 58.474 156.551 59.5938C156.551 60.5052 156.85 61.2344 157.449 61.7812C158.061 62.3151 158.875 62.582 159.891 62.582ZM178.523 44.8672L178.66 47.3086C180.223 45.4206 182.273 44.4766 184.812 44.4766C189.214 44.4766 191.453 46.9961 191.531 52.0352V66H186.785V52.3086C186.785 50.9674 186.492 49.9779 185.906 49.3398C185.333 48.6888 184.389 48.3633 183.074 48.3633C181.16 48.3633 179.734 49.2292 178.797 50.9609V66H174.051V44.8672H178.523ZM195.555 55.2773C195.555 51.9961 196.323 49.3789 197.859 47.4258C199.409 45.4596 201.46 44.4766 204.012 44.4766C206.421 44.4766 208.315 45.3164 209.695 46.9961L209.91 44.8672H214.188V65.3555C214.188 68.1289 213.322 70.3164 211.59 71.918C209.871 73.5195 207.547 74.3203 204.617 74.3203C203.068 74.3203 201.551 73.9948 200.066 73.3438C198.595 72.7057 197.475 71.8659 196.707 70.8242L198.953 67.9727C200.411 69.7044 202.208 70.5703 204.344 70.5703C205.919 70.5703 207.163 70.1406 208.074 69.2812C208.986 68.4349 209.441 67.1849 209.441 65.5312V64.1055C208.074 65.6289 206.251 66.3906 203.973 66.3906C201.499 66.3906 199.474 65.4076 197.898 63.4414C196.336 61.4753 195.555 58.7539 195.555 55.2773ZM200.281 55.6875C200.281 57.8099 200.711 59.4831 201.57 60.707C202.443 61.918 203.647 62.5234 205.184 62.5234C207.098 62.5234 208.517 61.7031 209.441 60.0625V50.7656C208.543 49.1641 207.137 48.3633 205.223 48.3633C203.66 48.3633 202.443 48.9818 201.57 50.2188C200.711 51.4557 200.281 53.2786 200.281 55.6875ZM234.441 55.4336V66H229.5V37.5625H240.379C243.556 37.5625 246.076 38.3893 247.938 40.043C249.812 41.6966 250.75 43.8841 250.75 46.6055C250.75 49.3919 249.832 51.5599 247.996 53.1094C246.173 54.6589 243.615 55.4336 240.32 55.4336H234.441ZM234.441 51.4688H240.379C242.137 51.4688 243.478 51.0586 244.402 50.2383C245.327 49.4049 245.789 48.207 245.789 46.6445C245.789 45.1081 245.32 43.8841 244.383 42.9727C243.445 42.0482 242.156 41.5729 240.516 41.5469H234.441V51.4688ZM263.66 66.3906C260.652 66.3906 258.211 65.4466 256.336 63.5586C254.474 61.6576 253.543 59.1315 253.543 55.9805V55.3945C253.543 53.2852 253.947 51.4036 254.754 49.75C255.574 48.0833 256.72 46.7878 258.191 45.8633C259.663 44.9388 261.303 44.4766 263.113 44.4766C265.991 44.4766 268.211 45.3945 269.773 47.2305C271.349 49.0664 272.137 51.6641 272.137 55.0234V56.9375H258.328C258.471 58.6823 259.051 60.0625 260.066 61.0781C261.095 62.0938 262.384 62.6016 263.934 62.6016C266.108 62.6016 267.879 61.7227 269.246 59.9648L271.805 62.4062C270.958 63.6693 269.826 64.6523 268.406 65.3555C267 66.0456 265.418 66.3906 263.66 66.3906ZM263.094 48.2852C261.792 48.2852 260.737 48.7409 259.93 49.6523C259.135 50.5638 258.628 51.8333 258.406 53.4609H267.449V53.1094C267.345 51.5208 266.922 50.3229 266.18 49.5156C265.438 48.6953 264.409 48.2852 263.094 48.2852ZM280.301 44.8672L280.438 47.0742C281.922 45.3424 283.953 44.4766 286.531 44.4766C289.357 44.4766 291.29 45.5573 292.332 47.7188C293.868 45.5573 296.03 44.4766 298.816 44.4766C301.147 44.4766 302.879 45.1211 304.012 46.4102C305.158 47.6992 305.743 49.6003 305.77 52.1133V66H301.023V52.25C301.023 50.9089 300.73 49.9258 300.145 49.3008C299.559 48.6758 298.589 48.3633 297.234 48.3633C296.154 48.3633 295.268 48.6562 294.578 49.2422C293.901 49.8151 293.426 50.5703 293.152 51.5078L293.172 66H288.426V52.0938C288.361 49.6068 287.091 48.3633 284.617 48.3633C282.716 48.3633 281.368 49.138 280.574 50.6875V66H275.828V44.8672H280.301ZM315.691 66H310.945V44.8672H315.691V66ZM310.652 39.3789C310.652 38.6497 310.88 38.0443 311.336 37.5625C311.805 37.0807 312.469 36.8398 313.328 36.8398C314.188 36.8398 314.852 37.0807 315.32 37.5625C315.789 38.0443 316.023 38.6497 316.023 39.3789C316.023 40.0951 315.789 40.694 315.32 41.1758C314.852 41.6445 314.188 41.8789 313.328 41.8789C312.469 41.8789 311.805 41.6445 311.336 41.1758C310.88 40.694 310.652 40.0951 310.652 39.3789ZM331.941 49.2031C331.316 49.099 330.672 49.0469 330.008 49.0469C327.833 49.0469 326.368 49.8802 325.613 51.5469V66H320.867V44.8672H325.398L325.516 47.2305C326.661 45.3945 328.25 44.4766 330.281 44.4766C330.958 44.4766 331.518 44.5677 331.961 44.75L331.941 49.2031ZM346.98 66C346.772 65.5964 346.59 64.9388 346.434 64.0273C344.923 65.6029 343.074 66.3906 340.887 66.3906C338.764 66.3906 337.033 65.7852 335.691 64.5742C334.35 63.3633 333.68 61.8659 333.68 60.082C333.68 57.8294 334.513 56.1042 336.18 54.9062C337.859 53.6953 340.255 53.0898 343.367 53.0898H346.277V51.7031C346.277 50.6094 345.971 49.737 345.359 49.0859C344.747 48.4219 343.816 48.0898 342.566 48.0898C341.486 48.0898 340.6 48.3633 339.91 48.9102C339.22 49.444 338.875 50.1276 338.875 50.9609H334.129C334.129 49.8021 334.513 48.7214 335.281 47.7188C336.049 46.7031 337.091 45.9089 338.406 45.3359C339.734 44.763 341.212 44.4766 342.84 44.4766C345.314 44.4766 347.286 45.1016 348.758 46.3516C350.229 47.5885 350.984 49.3333 351.023 51.5859V61.1172C351.023 63.0182 351.29 64.5352 351.824 65.668V66H346.98ZM341.766 62.582C342.703 62.582 343.582 62.3542 344.402 61.8984C345.236 61.4427 345.861 60.8307 346.277 60.0625V56.0781H343.719C341.961 56.0781 340.639 56.3841 339.754 56.9961C338.868 57.6081 338.426 58.474 338.426 59.5938C338.426 60.5052 338.725 61.2344 339.324 61.7812C339.936 62.3151 340.75 62.582 341.766 62.582Z"
+                        fill="#E6B635" />
+                    <path d="M175 122L213 137L253.5 122" stroke="#E6B635" stroke-width="3" stroke-linecap="round" />
+                    <path d="M175 107L213 122L253.5 107" stroke="#E6B635" stroke-width="3" stroke-linecap="round" />
+                </svg></div>
+            <div class="z-10 lg:w-72 md:w-41 sm:18 absolute lg:left-0 md:left-0 sm:left-0">
+                <img src="dist/assets/img/Cardl.webp" alt="">
+            </div>
+            <div class="z-10 lg:w-72 md:w-41 sm:18 absolute lg:right-0 md:right-0 sm:right-0">
+                <img src="dist/assets/img/Cardr.webp" alt="">
+            </div>
+
+            <h1 class=" mt-8 mb-12 text-3xl">Pemira Polimedia Jakarta merupakan kegiatan pemilihan Raya yang di
+                ikuti
+                oleh seluruh Civitas Akademika Polimedia Jakarta, untuk mendapatkan pemimpin ideal yang dicintai seluruh
+                Civitas Akademik Politeknik Negeri Media Kreatif Jakarta</h1>
+
+        </div>
+    </section>
+
+    <!-- CALON -->
+    <div class="flex w-full -mt-64 z-30 relative ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#7F1D1D" fill-opacity="1"
+                d="M0,96L80,85.3C160,75,320,53,480,80C640,107,800,181,960,186.7C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="bg-red-900">
+        <div class="flex items-center justify-center">
+            <h1 class="font-bold text-4xl -mt-36 z-50 text-white">VISI & MISI CALON</h1>
+        </div>
+        <div class="item-center justify-center flex items-center gap-4 font-bold text-black">
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500 active btns" onclick="filterSelection('all')">
+                ALL</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('mpm')">
+                MPM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('bem')">
+                BEM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('tgk48')">
+                TGK</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('tpm')">
+                TPM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('hime')">
+                MM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('degr')">
+                DG</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('desm')">
+                DM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('gtec')">
+                GTK</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('gtec')">
+                ANM</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('pnb')">
+                PNB</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('bc')">
+                BC</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('bc')">
+                HOTEL</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('bc')">
+                SENKUL</div>
+            <div class="px-5 py-1 border-b-2 hover:border-yellow-500  btns" onclick="filterSelection('bc')">
+                FTV</div>
+        </div>
+
+        <section class="text-white body-font pb-36">
+            <div class="container px-5 py-24 mx-auto">
+
+                <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column mpm">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon1.webp">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column bem">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon2.webp">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column tgk48">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon3.png">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column tpm">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon4.png">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column degr">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon5.png">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 column desm">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="dist/assets/img/paslon/paslon6.png">
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MAJELIS
+                                    PERMUSYAWARATAN MAHASISWA
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">XIANGLING & CHONGYUN</h1>
+                                <p class="leading-relaxed">BERSAMA KAMI UKT GRATIS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="flex w-full -mt-64 z-30 relative ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FBBF24" fill-opacity="1"
+                d="M0,96L80,85.3C160,75,320,53,480,80C640,107,800,181,960,186.7C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <section class="bg-yellow-400">
+        <div class="flex items-center justify-center">
+            <h1 class="font-bold text-4xl -mt-36 z-50 text-red-900">TIMELINE</h1>
+        </div>
+        <div class=" mx-auto flex items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 z-50 -mt-36 relative">
+            <img src="dist/assets/img/TIMELINE.png" alt="" class="object-cover w-full ">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="bg-red-900">
+        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+            <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="sm:col-span-2">
+                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+                        <img src="dist/assets/img/logo.webp" alt="Logo" class="h-14 mr-2">
+                        <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase">Company</span>
+                    </a>
+                    <div class="mt-6 lg:max-w-sm">
+                        <p class="text-sm text-white">
+                            Jl. Srengseng Sawah Raya No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta
+                            Selatan, Daerah Khusus Ibukota Jakarta 12630.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-2 text-sm">
+                    <p class="text-base font-bold tracking-wide text-white">Kontak</p>
+                    <div class="flex">
+                        <p class="mr-1 text-white">Telepon:</p>
+                        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
+                            class="transition-colors duration-300  hover:text-yellow-500 text-white">850-123-5021</a>
+                    </div>
+                    <div class="flex">
+                        <p class="mr-1 text-white">Email:</p>
+                        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
+                            class="transition-colors duration-300  hover:text-yellow-500 text-white">info@lorem.mail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+                <p class="text-sm text-white">
+                    © Copyright 2021 PEMIRA POLIMEDIA. All rights reserved. <br>Design By Andika Pratama S.H & Haikal
+                    D.T
+                </p>
+                <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                    <li>
+                        <a href="/"
+                            class="text-sm text-white transition-colors duration-300 hover:text-yellow-500">F.A.Q</a>
+                    </li>
+                    <li>
+                        <a href="/"
+                            class="text-sm text-white transition-colors duration-300 hover:text-yellow-500">Privacy
+                            Policy</a>
+                    </li>
+                    <li>
+                        <a href="/"
+                            class="text-sm text-white transition-colors duration-300 hover:text-yellow-500">Terms
+                            &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>
